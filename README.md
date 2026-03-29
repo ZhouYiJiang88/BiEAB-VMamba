@@ -31,13 +31,14 @@ pip install triton==2.0.0
 pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 pip install mamba_ssm==1.0.1  # mmamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
+```
 
 
 ## 1. Prepare the dataset
 
 ### ISIC datasets
 - The ISIC17 and ISIC18 datasets, divided into a 7:3 ratio, can be found here
- {[Baidu](https://pan.baidu.com/s/1Y0YupaH21yDN5uldl7IcZA?pwd=dybm) or [GoogleDrive](https://drive.google.com/file/d/1XM10fmAXndVLtXWOt5G0puYSQyI2veWy/view?usp=sharing)}. 
+ [GoogleDrive](https://drive.google.com/file/d/1XM10fmAXndVLtXWOt5G0puYSQyI2veWy/view?usp=sharing)}. 
 
 - After downloading the datasets, you are supposed to put them into
 './data/isic17/' and './data/isic18/', and the file format reference is as follows. (take the ISIC17 dataset as an example.)
@@ -53,4 +54,34 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
       - .png
     - masks
       - .png
+     
+        
+### PH2
 
+- For the PH2, you could download them from {[Baidu](https://pan.baidu.com/s/1QGIdKRLFQDWWglXVDnuBvQ pwd=9wb6)}.
+
+- After downloading the datasets, you are supposed to put them into './data/Synapse/', and the file format reference is as follows.
+
+- './data/PH2/'
+  - train
+    - images
+      - .bmp
+    - masks
+      - .bmp
+  - val
+    - images
+      - .bmp
+    - masks
+      - .bmp
+
+## 2. Prepare the pre_trained weights
+
+- The weights of the pre-trained VMamba could be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/1tZGs1YFHiDrMa-MjYY8ZoEnCyy7m7Gaj?usp=sharing). After that, the pre-trained weights should be stored in './pre/'.
+
+
+## 3. Train the BiEAB-VMamba
+```bash
+cd BiEAB-VMamba
+python train.py  # Train and test BiEAB-VMamba on the ISIC17 、 ISIC18 dataset or PH2.
+
+```
