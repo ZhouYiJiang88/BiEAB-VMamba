@@ -60,7 +60,7 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
 
 - For the PH2, you could download them from {[Baidu](https://pan.baidu.com/s/1QGIdKRLFQDWWglXVDnuBvQ pwd=9wb6)}.
 
-- After downloading the datasets, you are supposed to put them into './data/Synapse/', and the file format reference is as follows.
+- After downloading the datasets, you are supposed to put them into './data/PH2/', and the file format reference is as follows.
 
 - './data/PH2/'
   - train
