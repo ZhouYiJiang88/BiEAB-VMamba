@@ -10,7 +10,7 @@ import torch.utils.checkpoint as checkpoint
 from einops import rearrange, repeat
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
-from models.vmunet.lsb import ParallelEAB
+from models.vmunet.EAB import ParallelEAB
 
 # 在文件开头添加导入
 
