@@ -76,7 +76,7 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
 
 ## 2. Prepare the pre_trained weights
 
-- The weights of the pre-trained VMamba could be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/1tZGs1YFHiDrMa-MjYY8ZoEnCyy7m7Gaj?usp=sharing). After that, the pre-trained weights should be stored in './pre/'.
+- The weights of the pre-trained BiEAB-VMamba could be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/1tZGs1YFHiDrMa-MjYY8ZoEnCyy7m7Gaj?usp=sharing). After that, the pre-trained weights should be stored in './pre/'.
 
 
 ## 3. Train the BiEAB-VMamba
